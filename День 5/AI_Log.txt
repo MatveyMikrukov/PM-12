@@ -1,0 +1,28 @@
+Материал                     						Нейросеть								Промпт
+
+Изображение 1								lovart								A modern smartphone floating in the air against a blurry background of a sunny, futuristic eco-city. 																	Glowing 3D holographic icons of public transport, parks, and government services are flying out of the 																	screen. Cyberpunk-light style, cinematic lighting, photorealistic, 8k --ar 16:9
+
+Изображение 2 								lovart								A close-up of a person's hand holding a smartphone in front of a modern city hall. On the screen, a 																	clean user interface of a city app with a checked green mark "Service Approved". Bright corporate 																	style, minimalism, soft shadows, 3d render style --ar 16:9
+
+Изображение 3 								lovart								A sleek smartphone displaying a stylized digital bank card with a glowing neon shield around it, 																	protecting it from abstract binary code rain. Dark blue and gold colors, high-tech, securityconcept, 																	octane render, 3d design --ar 16:9
+
+Изображение 4								lovart 								A cheerful electric delivery scooter with a big cargo box driving through a cozy, bright citystreet, 																	tilt-shift effect. Friendly aesthetic, vibrant colors, Pixar style, 3d illustration --ar 16:9
+
+
+Изображение 5 								lovart 								A giant 3D toggle switch button in a smartphone interface, turning from red to green, surrounded by 																	abstract privacy icons like a padlock and an eye with a diagonal line. Flat vector 3D design, clean 																	pastel background --ar 16:9
+
+Видео 1 								veo3ai								Camera slowly zooms into a smartphone screen showing a 3D digital map of a city. Tiny glowing busand 																	car icons are smoothly moving along the streets in real-time. Hyper-detailed, smooth animation,loop.
+
+
+Видео 2      								veo3ai								A digital lock icon on a smartphone screen pulses with blue energy. A glowing shield expands fromthe 																	center, deflecting a wave of red glowing digital particles. 3D motion graphics, sci-fi interface.
+
+
+Изображение 1.1								lovart								A split-screen infographic template comparing traditional daily routine versus modern mobile apps 																	lifestyle. On the left side, titled "Before", shows a monochrome stylized conceptual graphic of long 																	paper queues, messy paper receipts, and clocks ticking. On the right side, titled "Now", shows a 																	vibrant, modern 3D smartphone glowing with colorful floating icons of public transport, digital bank 																	cards, and delivery boxes. Clean presentation slide style, minimalist corporate tech aesthetic, 8k 																	resolution --ar 16:9
+
+
+
+Изображение 2.1								lovart								A modern 3D infographic layout showcasing mobile app categories for citizen everyday life. In the 																	center, a sleek smartphone displays a clean map interface. Three separate dark transparent glass 																	floating panels branch out from the screen, each panel contains an empty space for text and a small 																	glowing abstract icon: a government coat of arms/house icon, a digital bank card icon, and a fast 																	delivery scooter icon. Clean pastel tech background, minimalist 3D design, presentation slide style, 																	8k resolution --ar 16:9
+
+
+
+Изображение 3.1								lovart								A clean mobile app privacy and cyber security infographic template. On the left, a sleek smartphone 																	with a prominent glowing 3D security shield icon and a padlock. On the right, a vertical dark semi-																	transparent glass panel with green glowing checkmarks next to empty bullet points, designed for text 																	checklist overlay. Minimalist tech studio background, professional corporate neon style, 8k 																		resolution --ar 16:9
