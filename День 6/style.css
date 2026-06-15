@@ -1,0 +1,448 @@
+/* ==========================================================================
+   1. ШРИФТЫ И ОБНУЛЕНИЕ (RESET)
+   ========================================================================== */
+
+/* Пример подключения вашего локального шрифта */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/CustomFont-Regular.woff2') format('woff2'),
+         url('../fonts/CustomFont-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/CustomFont-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   2. СЕТКА И СЛУЖЕБНЫЕ КОМПОНЕНТЫ
+   ========================================================================== */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Общие стили для кнопок */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #9a9a9a;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #808080;
+}
+
+.btn-login {
+    background-color: #f0f0f0;
+    color: #333333;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+/* Карточки */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    border: 1px solid #eef2f5;
+}
+
+.grid-three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ==========================================================================
+   3. ШАПКА И ПОДВАЛ (HEADER & FOOTER)
+   ========================================================================== */
+.site-header {
+    background-color: #ececec;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-list a, .back-link, .profile-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-list a:hover, .back-link:hover {
+    text-decoration: underline;
+}
+
+/* Бургер меню скрыто по умолчанию на ПК */
+.menu-burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-burger span {
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+.site-footer {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* ==========================================================================
+   4. СТИЛИ СТРАНИЦЫ 1: ГЛАВНАЯ
+   ========================================================================== */
+.hero-section {
+    padding: 50px 0;
+}
+
+.hero-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 8px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-banner {
+    flex: 1;
+    background-color: #e0e0e0;
+    border: 2px dashed #a0a0a0;
+    border-radius: 8px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-text {
+    color: #666666;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.advantages-section, .courses-section {
+    padding: 40px 0;
+}
+
+.advantage-card {
+    background-color: #ebf3ff; /* Светло-голубой по макету */
+    border: none;
+}
+
+.course-card {
+    border: 1px solid #e0e0e0;
+    min-height: 180px;
+}
+
+/* ==========================================================================
+   5. СТИЛИ СТРАНИЦЫ 2: ВИДЕО-УРОК
+   ========================================================================== */
+.lesson-page {
+    padding: 40px 0;
+}
+
+.lesson-container {
+    display: flex;
+    gap: 30px;
+}
+
+.video-area {
+    flex: 2;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Пропорции 16:9 */
+    height: 0;
+    background-color: #111111;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.video-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.lesson-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.sidebar-lessons {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    align-self: flex-start;
+}
+
+.sidebar-lessons h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.lessons-list {
+    list-style: none;
+}
+
+.lesson-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.lesson-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.lesson-item.active {
+    background-color: #fff;
+    font-weight: bold;
+    border-left: 4px solid #333;
+}
+
+.lesson-item.locked {
+    color: #999;
+}
+
+/* ==========================================================================
+   6. СТИЛИ СТРАНИЦЫ 3: КОНТАКТЫ
+   ========================================================================== */
+.contacts-page {
+    padding: 40px 0;
+}
+
+.contacts-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.contacts-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.map-container {
+    flex: 1;
+    background-color: #e0e0e0;
+    border: 2px dashed #a0a0a0;
+    border-radius: 8px;
+    min-height: 350px;
+    display: flex;
+}
+
+.map-placeholder {
+    margin: auto;
+    color: #666;
+    font-weight: bold;
+}
+
+.form-container {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.form-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.feedback-form .form-group {
+    margin-bottom: 15px;
+}
+
+.feedback-form input, .feedback-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.feedback-form textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #333333;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.btn-submit:hover {
+    background-color: #555555;
+}
+
+
+/* ==========================================================================
+   7. АДАПТИВНОСТЬ (MEDIA QUERIES) — Переход на Mobile
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    
+    /* Шапка превращается в мобильную архитектуру */
+    .main-nav, .btn-login {
+        display: none; /* Скрываем дефолтное меню */
+    }
+    
+    .menu-burger {
+        display: flex; /* Показываем иконку бургера */
+    }
+
+    /* Главная страница: стек блоков сверху вниз */
+    .hero-container {
+        flex-direction: column;
+    }
+    
+    .hero-content, .hero-banner {
+        width: 100%;
+    }
+
+    .hero-content {
+        order: 1; /* Текст заголовка идет первым */
+        min-height: auto;
+        gap: 20px;
+    }
+
+    .hero-banner {
+        order: 2; /* Баннер падает под заголовок */
+    }
+
+    /* Сетки из 3 колонок превращаются в 1 колонку */
+    .grid-three-columns {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Страница урока: Сайдбар/Плейлист уходит под видеоплеер */
+    .lesson-container {
+        flex-direction: column;
+    }
+    
+    .sidebar-lessons {
+        width: 100%;
+        order: 2;
+    }
+    
+    .video-area {
+        order: 1;
+    }
+
+    /* Страница контактов: Форма становится сверху, а Карта снизу */
+    .contacts-wrapper {
+        flex-direction: column;
+    }
+
+    .form-container {
+        order: 1;
+    }
+
+    .map-container {
+        order: 2;
+        min-height: 200px;
+    }
+}
